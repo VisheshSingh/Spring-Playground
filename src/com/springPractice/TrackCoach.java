@@ -12,4 +12,10 @@ public class TrackCoach implements Coach {
 		return "Include Milk, eggs, oats, vegetables and chicken in you diet";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

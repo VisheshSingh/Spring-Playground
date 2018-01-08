@@ -12,4 +12,10 @@ public class BaseballCoach implements Coach {
 		return "Baseball Diet Plan: Breakfast: Vegetables, Lunch: Eggs and Dinner: Chicken breasts";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

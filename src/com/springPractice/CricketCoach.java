@@ -12,4 +12,10 @@ public class CricketCoach implements Coach {
 		return "Cricket Diet Plan: Brocolli, scrambled eggs; oats and brown rice; chicken and chick peas";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
