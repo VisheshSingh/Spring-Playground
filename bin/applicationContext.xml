@@ -13,6 +13,10 @@
     <!-- Define your beans here -->
     
     <!-- Define the dependency -->
+    <bean id="myRandomFortuneService"
+    		class="com.springPractice.RandomFortuneService">
+    </bean>
+    	
     <bean id="myFortuneService"
     	class="com.springPractice.HappyFortuneService">
     </bean>
@@ -20,7 +24,7 @@
     <bean id="myCoach"
      	class="com.springPractice.TrackCoach">
      	<!-- set up constructor injection -->
-     	<constructor-arg ref="myFortuneService" />
+     	<constructor-arg ref="myRandomFortuneService" />
      </bean>
      
      <bean id="myCricketCoach"
