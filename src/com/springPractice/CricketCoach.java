@@ -4,8 +4,19 @@ public class CricketCoach implements Coach {
 
 	private FortuneService fortuneService;
 
+	// create a no-args constructor
+	public CricketCoach() {
+		System.out.println("This is from no-args constructor...");
+	}
+
 	public CricketCoach(FortuneService fortuneService) {
 		super();
+		this.fortuneService = fortuneService;
+	}
+
+	// Setter method
+	public void setFortuneService(FortuneService fortuneService) {
+		System.out.println("Inside setter method...");
 		this.fortuneService = fortuneService;
 	}
 
