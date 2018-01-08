@@ -14,7 +14,7 @@
     	class="com.springPractice.HappyFortuneService">
     </bean>
     <bean id="myCoach"
-     	class="com.springPractice.CricketCoach">
+     	class="com.springPractice.TrackCoach">
      	<!-- set up constructor injection -->
      	<constructor-arg ref="myFortuneService" />
      </bean>

@@ -2,6 +2,13 @@ package com.springPractice;
 
 public class CricketCoach implements Coach {
 
+	private FortuneService fortuneService;
+
+	public CricketCoach(FortuneService fortuneService) {
+		super();
+		this.fortuneService = fortuneService;
+	}
+
 	@Override
 	public String getDailyWorkout() {
 		return "Streching for 30 mins";
@@ -14,8 +21,8 @@ public class CricketCoach implements Coach {
 
 	@Override
 	public String getDailyFortune() {
-		// TODO Auto-generated method stub
-		return null;
+
+		return "Never give up! " + fortuneService.getFortune();
 	}
 
 }
