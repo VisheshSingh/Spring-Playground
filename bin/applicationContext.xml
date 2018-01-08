@@ -13,10 +13,18 @@
     <bean id="myFortuneService"
     	class="com.springPractice.HappyFortuneService">
     </bean>
+    
     <bean id="myCoach"
      	class="com.springPractice.TrackCoach">
      	<!-- set up constructor injection -->
      	<constructor-arg ref="myFortuneService" />
+     </bean>
+     
+     <bean id="myCricketCoach"
+     	class="com.springPractice.CricketCoach" >
+     	
+     	<!-- Set up setter injection -->
+     	<property name="fortuneService" ref="myFortuneService" />
      </bean>
 </beans>
 
