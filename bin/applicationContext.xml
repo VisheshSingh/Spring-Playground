@@ -30,9 +30,8 @@
      	<property name="fortuneService" ref="myFortuneService" />
      	
      	<!-- Set up String literals -->
-     	<property name="emailAddress" value="theBestCricketCoach@gmail.com" />
-     	
-     	<property name="team" value="Sunrisers Hyderabad" />
+     	<property name="emailAddress" value="${foo.email}" />
+     	<property name="team" value="${foo.team}" />
      </bean>
 </beans>
 
